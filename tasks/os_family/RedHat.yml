@@ -1,0 +1,10 @@
+---
+# via https://www.tecmint.com/dnf-automatic-install-security-updates-automatically-in-centos-8/
+
+- name: install package dnf-automatic
+  dnf:
+    name: dnf-automatic
+    state: installed
+
+# configure automatic.conf
+# variableninhalt komplett in datei schreiben
